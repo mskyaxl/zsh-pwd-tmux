@@ -1,11 +1,18 @@
-# tmux-zhs
+# zsh-tmux-
+
+**This is a plugin based on the official [oh-my-zsh tmux plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux)**
+
+
+Beside the features you get from the official plugin, this plugin opens a new window when using "Open a terminal in the current folder"
 
 This plugin provides aliases for [tmux](https://tmux.github.io/), the terminal multiplexer.
-To use it add `tmux` to the plugins array in your zshrc file.
+To use it clone the repo under $ZSH_CUSTOM/plugins and add `zhs-pwd-tmux` to the plugins array in your zshrc file.
 
 ```zsh
-plugins=(... tmux-zsh)
+plugins=(... zhs-pwd-tmux)
 ```
+
+## Original description
 
 The plugin also supports the following:
 
