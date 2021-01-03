@@ -1,4 +1,4 @@
-# zsh-tmux-
+# zsh-pwd-tmux
 
 **This is a plugin based on the official [oh-my-zsh tmux plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux)**
 
