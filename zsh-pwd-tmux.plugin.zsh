@@ -66,8 +66,11 @@ function _zsh_tmux_plugin_run() {
   [[ "$ZSH_TMUX_ITERM2" == "true" ]] && tmux_cmd+=(-CC)
   [[ "$ZSH_TMUX_UNICODE" == "true" ]] && tmux_cmd+=(-u)
 
+  local -a tmux_attach_cmd=($tmux_cmd attach) 
+  tmux_attach_cmd+=( $(pwd))
+
   # Try to connect to an existing session.
-  [[ "$ZSH_TMUX_AUTOCONNECT" == "true" ]] && $tmux_cmd attach
+  [[ "$ZSH_TMUX_AUTOCONNECT" == "true" ]] && $tmux_attach_cmd
 
   # If failed, just run tmux, fixing the TERM variable if requested.
   if [[ $? -ne 0 ]]; then
